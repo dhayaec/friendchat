@@ -1,0 +1,22 @@
+<nav class="navbar navbar-fixed-top navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">Friend Chat</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item {{#if active_home}}active{{/if}}">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item {{#if active_about}}active{{/if}}">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+      <li class="nav-item {{#if active_books}}active{{/if}}">
+        <a class="nav-link" href="/login">Login</a>
+      </li>
+      <li class="nav-item {{#if active_contact}}active{{/if}}">
+        <a class="nav-link" href="/signup">Sign Up</a>
+      </li>
+      <li class="nav-item {{#if active_add}}active{{/if}}">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
