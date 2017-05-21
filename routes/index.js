@@ -20,11 +20,15 @@ router.get('/about', (req, res, next) => {
 });
 
 router.get('/login', (req, res, next) => {
-  res.render('login', { title: 'Login' });
+  res.render('login', { title: 'Login', active_login: true });
 });
 
 router.get('/signup', (req, res, next) => {
-  res.render('signup', { title: 'Signup' });
+  res.render('signup', { title: 'Signup', active_signup: true });
+});
+
+router.get('/dashboard', (req, res, next) => {
+  res.render('dashboard', { title: 'Dashboard' });
 });
 
 
